@@ -63,9 +63,13 @@ ul {
   padding: 1rem 1rem 1rem 1rem;
   line-height: 1.5;
 }
-.harmaa-rivi-even,
-.harmaa-rivi-odd {
+
+.harmaa-rivi-even {
   width: 100%;
+  table-layout: fixed;
+}
+.harmaa-rivi-odd {
+  width: 66.6666%;
   table-layout: fixed;
 }
 .harmaa-rivi-odd tr:nth-child(odd) {
@@ -78,4 +82,14 @@ ul {
 .harmaa-rivi-odd td:nth-child(2),
 .harmaa-rivi-even td:nth-child(2) {
   padding-left: 2rem;
+}
+
+/* ikonit */
+.pdf {
+}
+
+.email {
+}
+
+.outside-domain {
 }
