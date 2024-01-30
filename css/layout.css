@@ -1,0 +1,81 @@
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.6rem;
+  padding: 1rem;
+}
+ul {
+  list-style: disc;
+  padding: 1rem 1rem 1rem 1rem;
+}
+h1,
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+table {
+  margin-bottom: 1rem;
+}
+tr {
+  line-height: 1.5;
+}
+td {
+  padding-right: 1rem;
+}
+/* CSS-säännöt jotka lisätään javascriptin avulla */
+.linkit {
+  color: #6f274d;
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: underline dotted 3px;
+}
+/* 2. ensimmäisen luettelon elementit rinnakkain flexin avulla*/
+/* vanhemman sääntö (ul)*/
+.rinnakkain {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1rem;
+  padding: 1rem;
+}
+/* lasten säännöt (ul li)*/
+.rinnakkain > * {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.rinnakkain ul {
+  background-color: lightgray;
+  padding-inline-start: 3rem;
+}
+
+.rinnakkain ul ul {
+  padding-block-start: 0;
+  padding-block-end: 0;
+  padding-inline-start: 3rem;
+}
+
+ul {
+  list-style: disc;
+  padding: 1rem 1rem 1rem 1rem;
+  line-height: 1.5;
+}
+.harmaa-rivi-even,
+.harmaa-rivi-odd {
+  width: 100%;
+  table-layout: fixed;
+}
+.harmaa-rivi-odd tr:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+.harmaa-rivi-even tr:nth-child(even) {
+  background-color: lightgray;
+}
+.harmaa-rivi-odd td:nth-child(2),
+.harmaa-rivi-even td:nth-child(2) {
+  padding-left: 2rem;
+}
